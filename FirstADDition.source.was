@@ -1,0 +1,6 @@
+ORG 0x0000    ; Start of the program at memory location 0000
+MOV AX, [0x0008] ; Load the value from memory address 0008 into AX
+MOV BX, [0x0009] ; Load the value from memory address 0009 into BX
+ADD AX, BX    ; Add BX to AX
+MOV [0x000A], AX ; Store the value of AX into memory address 000A
+HALT          ; Halt the program
